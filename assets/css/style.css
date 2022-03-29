@@ -1,9 +1,4 @@
-/**
-* Template Name: Personal - v4.7.0
-* Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 
 /*--------------------------------------------------------------
 # General
@@ -62,7 +57,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: ease-in-out 0.3s;
 }
 #header h1 {
-  font-size: 48px;
+  font-size: 3rem;
   margin: 0;
   padding: 0;
   line-height: 1;
@@ -92,7 +87,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
 }
 #header .social-links a {
-  font-size: 16px;
+  font-size: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -112,8 +107,8 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 36px;
   }
   #header h2 {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
   }
   #header .social-links {
     margin-top: 15px;
@@ -139,7 +134,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #header.header-top h1 {
   margin-right: auto;
-  font-size: 36px;
+  font-size: 2.25rem;
 }
 #header.header-top .container {
   display: flex;
@@ -153,7 +148,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 60px;
   }
   #header.header-top h1 {
-    font-size: 26px;
+    font-size: 1.625rem;
   }
 }
 
@@ -186,14 +181,14 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-between;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.7);
   white-space: nowrap;
   transition: 0.3s;
 }
 .navbar a i, .navbar a:focus i {
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 0;
   margin-left: 5px;
 }
@@ -211,7 +206,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .navbar a:hover:before, .navbar li:hover > a:before, .navbar .active:before {
   visibility: visible;
-  width: 25px;
+  width: 100%;
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
   color: #fff;
@@ -222,7 +217,7 @@ h1, h2, h3, h4, h5, h6 {
 */
 .mobile-nav-toggle {
   color: #fff;
-  font-size: 28px;
+  font-size: 1.75rem;
   cursor: pointer;
   display: none;
   line-height: 0;
@@ -277,7 +272,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 .navbar-mobile a, .navbar-mobile a:focus {
-  font-size: 16px;
+  font-size: 1rem;
   position: relative;
 }
 
@@ -314,7 +309,7 @@ section .container {
 }
 
 .section-title h2 {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 500;
   padding: 0;
   line-height: 1px;
@@ -335,7 +330,7 @@ section .container {
 .section-title p {
   margin: 0;
   margin: -15px 0 15px 0;
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: 700;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
@@ -347,7 +342,7 @@ section .container {
 --------------------------------------------------------------*/
 .about-me .content h3 {
   font-weight: 700;
-  font-size: 26px;
+  font-size: 1.625rem;
   color: #18d26e;
 }
 .about-me .content ul {
@@ -363,7 +358,7 @@ section .container {
   margin-right: 10px;
 }
 .about-me .content ul i {
-  font-size: 16px;
+  font-size: 1rem;
   margin-right: 5px;
   color: #18d26e;
   line-height: 0;
@@ -415,7 +410,7 @@ section .container {
   transition: ease-in-out 0.3s;
 }
 .interests .icon-box i {
-  font-size: 32px;
+  font-size: 2rem;
   padding-right: 10px;
   line-height: 1;
 }
@@ -435,7 +430,7 @@ section .container {
 # Resume
 --------------------------------------------------------------*/
 .resume .resume-title {
-  font-size: 26px;
+  font-size: 1.625rem;
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -448,8 +443,8 @@ section .container {
   position: relative;
 }
 .resume .resume-item h4 {
-  line-height: 18px;
-  font-size: 18px;
+  line-height: 1.125rem;
+  font-size: 1.125rem;
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
@@ -457,7 +452,7 @@ section .container {
   margin-bottom: 10px;
 }
 .resume .resume-item h5 {
-  font-size: 16px;
+  font-size: 1rem;
   background: rgba(255, 255, 255, 0.15);
   padding: 5px 15px;
   display: inline-block;
@@ -509,7 +504,7 @@ section .container {
 }
 .services .icon-box .icon i {
   color: #fff;
-  font-size: 28px;
+  font-size: 1.75rem;
 }
 .services .icon-box .icon::before {
   position: absolute;
@@ -526,7 +521,7 @@ section .container {
 .services .icon-box h4 {
   font-weight: 700;
   margin-bottom: 15px;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 .services .icon-box h4 a {
   color: #fff;
@@ -572,7 +567,7 @@ section .container {
   cursor: pointer;
   display: inline-block;
   padding: 8px 16px 10px 16px;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
@@ -649,13 +644,13 @@ section .container {
   z-index: 9994;
 }
 .portfolio .portfolio-wrap .portfolio-info h4 {
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #fff;
   font-weight: 600;
 }
 .portfolio .portfolio-wrap .portfolio-info p {
   color: #ffffff;
-  font-size: 14px;
+  font-size: 0.875rem;
   text-transform: uppercase;
   padding: 0;
   margin: 0;
@@ -667,7 +662,7 @@ section .container {
 .portfolio .portfolio-wrap .portfolio-links a {
   color: #fff;
   margin: 0 2px;
-  font-size: 28px;
+  font-size: 1.75rem;
   display: inline-block;
   transition: 0.3s;
 }
@@ -711,7 +706,7 @@ section .container {
   padding-bottom: 40px;
 }
 .portfolio-details .portfolio-title {
-  font-size: 26px;
+  font-size: 1.625rem;
   font-weight: 700;
   margin-bottom: 20px;
 }
@@ -719,7 +714,7 @@ section .container {
   padding-top: 45px;
 }
 .portfolio-details .portfolio-info h3 {
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: 400;
   margin-bottom: 20px;
 }
@@ -732,7 +727,7 @@ section .container {
   margin-top: 10px;
 }
 .portfolio-details .portfolio-info p {
-  font-size: 15px;
+  font-size: 0.9375rem;
   padding: 15px 0 0 0;
 }
 @media (max-width: 992px) {
@@ -753,9 +748,7 @@ section .container {
 .portfolio-details .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #18d26e;
 }
-.swiper-slide{
-  
-}
+
 
 /*--------------------------------------------------------------
 # Contact
@@ -767,7 +760,7 @@ section .container {
   background: rgba(255, 255, 255, 0.08);
 }
 .contact .info-box i.bx {
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #18d26e;
   border-radius: 50%;
   padding: 14px;
@@ -775,7 +768,7 @@ section .container {
   background: rgba(255, 255, 255, 0.1);
 }
 .contact .info-box h3 {
-  font-size: 20px;
+  font-size: 1.25rem;
   color: rgba(255, 255, 255, 0.5);
   font-weight: 700;
   margin: 10px 0 8px 68px;
@@ -784,7 +777,7 @@ section .container {
   padding: 0;
   color: #fff;
   line-height: 24px;
-  font-size: 14px;
+  font-size: 0.875rem;
   margin: 0 0 0 68px;
 }
 .contact .info-box .social-links {
@@ -792,7 +785,7 @@ section .container {
   display: flex;
 }
 .contact .info-box .social-links a {
-  font-size: 18px;
+  font-size: 1.125rem;
   display: inline-block;
   color: #fff;
   line-height: 1;
@@ -802,11 +795,11 @@ section .container {
 .contact .info-box .social-links a:hover {
   color: #18d26e;
 }
-.contact .php-email-form {
+.contact .contact-form {
   padding: 30px;
   background: rgba(255, 255, 255, 0.08);
 }
-.contact .php-email-form .error-message {
+.contact .contact-form .error-message {
   display: none;
   background: rgba(255, 255, 255, 0.08);
   background: #ed3c0d;
@@ -814,10 +807,10 @@ section .container {
   padding: 15px;
   font-weight: 600;
 }
-.contact .php-email-form .error-message br + br {
+.contact .contact-form .error-message br + br {
   margin-top: 25px;
 }
-.contact .php-email-form .sent-message {
+.contact .contact-form .sent-message {
   display: none;
   background: rgba(255, 255, 255, 0.08);
   background: #18d26e;
@@ -825,13 +818,13 @@ section .container {
   padding: 15px;
   font-weight: 600;
 }
-.contact .php-email-form .loading {
+.contact .contact-form .loading {
   display: none;
   background: rgba(255, 255, 255, 0.08);
   text-align: center;
   padding: 15px;
 }
-.contact .php-email-form .loading:before {
+.contact .contact-form .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -843,33 +836,33 @@ section .container {
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
 }
-.contact .php-email-form input, .contact .php-email-form textarea {
+.contact .contact-form input, .contact .contact-form textarea {
   border-radius: 0;
   box-shadow: none;
-  font-size: 14px;
+  font-size: 0.875rem;
   background: rgba(255, 255, 255, 0.08);
   border: 0;
   transition: 0.3s;
   color: #fff;
 }
-.contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
+.contact .contact-form input:focus, .contact .contact-form textarea:focus {
   background-color: rgba(255, 255, 255, 0.11);
 }
-.contact .php-email-form input::-moz-placeholder, .contact .php-email-form textarea::-moz-placeholder {
+.contact .contact-form input::-moz-placeholder, .contact .contact-form textarea::-moz-placeholder {
   color: rgba(255, 255, 255, 0.3);
   opacity: 1;
 }
-.contact .php-email-form input::placeholder, .contact .php-email-form textarea::placeholder {
+.contact .contact-form input::placeholder, .contact .contact-form textarea::placeholder {
   color: rgba(255, 255, 255, 0.3);
   opacity: 1;
 }
-.contact .php-email-form input {
+.contact .contact-form input {
   padding: 10px 15px;
 }
-.contact .php-email-form textarea {
+.contact .contact-form textarea {
   padding: 12px 15px;
 }
-.contact .php-email-form button[type=submit] {
+.contact .contact-form button[type=submit] {
   background: #18d26e;
   border: 0;
   padding: 10px 30px;
@@ -877,22 +870,9 @@ section .container {
   transition: 0.4s;
   border-radius: 4px;
 }
-.contact .php-email-form button[type=submit]:hover {
+.contact .contact-form button[type=submit]:hover {
   background: #15bb62;
 }
-@-webkit-keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+.text-center{
+  padding-top: 2rem;
 }
