@@ -28,7 +28,7 @@
   <!-- Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
 
 </head>
@@ -273,25 +273,19 @@
             </p>
           </div> -->
         </div>
-        <!-- <div class="col-lg-6">
+        <div class="col-lg-6">
           <h3 class="resume-title">Professional Experience</h3>
           <div class="resume-item">
-            <h4>Senior graphic design specialist</h4>
-            <h5>2019 - Present</h5>
-            <p><em>Experion, New York, NY </em></p>
+            <h4>Intern</h4>
+            <h5>2022 - Present</h5>
+            <p><em>Brototype</em></p>
             <p>
             <ul>
-              <li>Lead in the design, development, and implementation of the graphic, layout, and production
-                communication materials</li>
-              <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project.
-              </li>
-              <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the
-                design</li>
-              <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
+              <li>Golang Developer</li>
             </ul>
             </p>
           </div>
-          <div class="resume-item">
+          <!-- <div class="resume-item">
             <h4>Graphic design specialist</h4>
             <h5>2017 - 2018</h5>
             <p><em>Stepping Stone Advertising, New York, NY</em></p>
@@ -304,8 +298,8 @@
               <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
             </ul>
             </p>
-          </div>
-        </div> -->
+          </div> -->
+        </div>
       </div>
 
     </div>
@@ -449,11 +443,16 @@
 
       <form action="" id="submit-form" role="form" class="contact-form mt-4">
         <div class="row">
-          <div class="col-md-6 form-group">
+          <div class="col-md-12 form-group">
             <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
           </div>
-          <div class="col-md-6 form-group mt-3 mt-md-0">
-            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+          <div class="col-md-6 form-group mt-3 mt-md-3">
+            <input type="number" name="number" class="form-control" id="number" placeholder="Your number" required min="10" max="10">
+            <small id="phoneHelp" class="form-text text-muted">We'll never share your number with anyone else.</small>
+          </div>
+          <div class="col-md-6 form-group mt-3 mt-md-3">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required> 
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
           </div>
         </div>
         <div class="form-group mt-3">
@@ -465,24 +464,6 @@
     </div>
   </section><!-- End Contact Section -->
 
-  <script>
-    $("#submit-form").submit((e) => {
-      e.preventDefault()
-      $.ajax({
-        url: "https://script.google.com/macros/s/AKfycbxTv1LsfTLdoC2r26Zp3v7a5lbhHaAkB0aEylJvN3YbuzYc9z-c9KMEsieMWzmLDf3B/exec",
-        data: $("#submit-form").serialize(),
-        method: "post",
-        success: function (response) {
-          alert("Your message has been sent. Thank you!")
-          window.location.href = "#header"
-        },
-        error: function (err) {
-          alert("Something Error")
-
-        }
-      })
-    })
-  </script>
   
 
   <div class="credits">
@@ -504,8 +485,8 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
+  
 </body>
 
 </html>

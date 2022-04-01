@@ -213,3 +213,19 @@
 
 })()
  
+$("#submit-form").submit((e) => {
+  e.preventDefault()
+  $.ajax({
+    url: "https://script.google.com/macros/s/AKfycbxTv1LsfTLdoC2r26Zp3v7a5lbhHaAkB0aEylJvN3YbuzYc9z-c9KMEsieMWzmLDf3B/exec",
+    data: $("#submit-form").serialize(),
+    method: "post",
+    success: function (response) {
+      alert("Your message has been received. Thank you!")
+      window.location.reload()
+    },
+    error: function (err) {
+      alert("Something Error")
+
+    }
+  })
+})
