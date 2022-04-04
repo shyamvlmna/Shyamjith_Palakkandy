@@ -3,6 +3,9 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+html{
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #040404;
@@ -534,6 +537,7 @@ section .container {
 .services .icon-box:hover {
   background: #18d26e;
   border-color: #18d26e;
+  cursor: pointer;
 }
 .services .icon-box:hover .icon {
   background: #fff;
