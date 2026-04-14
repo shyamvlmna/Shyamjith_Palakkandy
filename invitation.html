@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anaswara & Shyamjith - Engagement</title>
+    <title>Shyamjith & Anaswara - Engagement</title>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Cinzel:wght@400;500;600;700&family=Great+Vibes&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -215,25 +215,12 @@
             font-weight: 600;
         }
 
-        /* Love birds SVG */
-        .love-birds {
-            margin-top: 35px;
-            opacity: 0;
-            animation: fadeUp 1.2s ease-out 3.5s forwards;
-            z-index: 2;
-        }
-
-        .love-birds svg {
-            width: 80px;
-            height: 45px;
-        }
-
         .outer-date {
             font-family: 'Cinzel', serif;
             font-size: 14px;
             color: var(--gold);
             letter-spacing: 4px;
-            margin-top: 8px;
+            margin-top: 30px;
             opacity: 0;
             animation: fadeUp 1.2s ease-out 3.8s forwards;
             z-index: 2;
@@ -277,6 +264,7 @@
             flex-direction: column;
             align-items: center;
             padding: 30px 28px 24px;
+            justify-content: center;
             z-index: 5;
             opacity: 0;
             animation: innerAppear 0.5s ease-out 0.8s forwards;
@@ -299,47 +287,15 @@
             pointer-events: none;
         }
 
-        /* Ganesh symbol */
-        .ganesh {
-            opacity: 0;
-            animation: fadeDown 1s ease-out 6.5s forwards;
-            margin-bottom: 14px;
-        }
-
-        .ganesh svg {
-            width: 44px;
-            height: 50px;
-        }
-
-        /* Parent info */
-        .parent-names {
-            font-family: 'Playfair Display', serif;
-            font-size: 16px;
-            color: var(--gold-light);
-            text-align: center;
-            opacity: 0;
-            animation: fadeUp 1s ease-out 7s forwards;
-            font-weight: 500;
-        }
-
-        .parent-address {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 13px;
+        .inner-heading {
+            font-family: 'Cinzel', serif;
+            font-size: 14px;
             color: var(--gold);
-            text-align: center;
+            letter-spacing: 4px;
+            text-transform: uppercase;
             opacity: 0;
-            animation: fadeUp 1s ease-out 7.2s forwards;
-            margin-top: 4px;
-            line-height: 1.5;
-        }
-
-        .parent-phone {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 12px;
-            color: rgba(201,169,110,0.7);
-            opacity: 0;
-            animation: fadeUp 1s ease-out 7.4s forwards;
-            margin-top: 2px;
+            animation: fadeDown 1s ease-out 9s forwards;
+            margin-bottom: 8px;
         }
 
         .invite-text {
@@ -350,7 +306,7 @@
             line-height: 1.7;
             margin-top: 18px;
             opacity: 0;
-            animation: fadeUp 1s ease-out 7.7s forwards;
+            animation: fadeUp 1s ease-out 9.5s forwards;
             font-style: italic;
         }
 
@@ -360,7 +316,7 @@
             color: var(--gold-bright);
             margin-top: 16px;
             opacity: 0;
-            animation: nameReveal 1.5s ease-out 8.2s forwards;
+            animation: nameReveal 1.5s ease-out 10s forwards;
             text-shadow: 0 2px 10px rgba(201,169,110,0.3);
             line-height: 1;
         }
@@ -372,7 +328,7 @@
             letter-spacing: 5px;
             text-transform: lowercase;
             opacity: 0;
-            animation: fadeUp 1s ease-out 8.6s forwards;
+            animation: fadeUp 1s ease-out 10.5s forwards;
             margin: 4px 0;
         }
 
@@ -383,19 +339,8 @@
             letter-spacing: 3px;
             font-weight: 600;
             opacity: 0;
-            animation: nameReveal 1.5s ease-out 9s forwards;
+            animation: nameReveal 1.5s ease-out 11s forwards;
             text-shadow: 0 2px 10px rgba(201,169,110,0.3);
-        }
-
-        .groom-parents {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 13px;
-            color: var(--gold);
-            text-align: center;
-            margin-top: 10px;
-            opacity: 0;
-            animation: fadeUp 1s ease-out 9.4s forwards;
-            line-height: 1.5;
         }
 
         .join-text {
@@ -403,9 +348,9 @@
             font-size: 13px;
             color: var(--gold-light);
             font-style: italic;
-            margin-top: 8px;
+            margin-top: 14px;
             opacity: 0;
-            animation: fadeUp 1s ease-out 9.6s forwards;
+            animation: fadeUp 1s ease-out 13s forwards;
         }
 
         /* Filigree divider */
@@ -414,7 +359,7 @@
             height: 28px;
             margin-top: 10px;
             opacity: 0;
-            animation: fadeIn 1.2s ease-out 9.8s forwards;
+            animation: fadeIn 1.2s ease-out 11.5s forwards;
         }
 
         /* Event details row */
@@ -426,7 +371,7 @@
             margin-top: 10px;
             width: 100%;
             opacity: 0;
-            animation: fadeUp 1.2s ease-out 10.2s forwards;
+            animation: fadeUp 1.2s ease-out 12s forwards;
         }
 
         .detail-block {
@@ -487,20 +432,28 @@
             color: var(--gold);
         }
 
-        /* Sharing happiness */
-        .sharing {
-            font-family: 'Libre Baskerville', serif;
+        /* Venue CTA */
+        .venue-cta {
+            display: inline-block;
+            font-family: 'Cinzel', serif;
             font-size: 13px;
-            color: var(--gold);
-            font-style: italic;
-            margin-top: 14px;
+            color: var(--gold-bright);
+            letter-spacing: 2px;
+            text-decoration: none;
+            border: 1px solid rgba(201,169,110,0.4);
+            padding: 12px 28px;
+            border-radius: 30px;
+            margin-top: 18px;
             opacity: 0;
-            animation: fadeUp 1s ease-out 10.8s forwards;
+            animation: fadeUp 1s ease-out 13.5s forwards;
+            transition: all 0.3s;
+            z-index: 2;
         }
 
-        .sharing span {
-            font-weight: 700;
-            color: var(--gold-light);
+        .venue-cta:hover {
+            background: rgba(201,169,110,0.15);
+            border-color: var(--gold);
+            box-shadow: 0 4px 20px rgba(201,169,110,0.2);
         }
 
         /* ── Keyframes ── */
@@ -540,7 +493,7 @@
             z-index: 50;
             pointer-events: none;
             opacity: 0;
-            animation: shimmerSweep 4s ease-in-out 11.5s forwards;
+            animation: shimmerSweep 4s ease-in-out 14s forwards;
         }
 
         @keyframes shimmerSweep {
@@ -564,7 +517,7 @@
             cursor: pointer;
             z-index: 200;
             opacity: 0;
-            animation: fadeIn 1s ease-out 12s forwards;
+            animation: fadeIn 1s ease-out 15s forwards;
             transition: all 0.3s;
             letter-spacing: 2px;
         }
@@ -587,45 +540,16 @@
     <div class="inner-card" id="innerCard">
         <div class="shimmer-overlay"></div>
 
-        <!-- Ganesh Symbol -->
-        <div class="ganesh">
-            <svg viewBox="0 0 60 68" fill="none">
-                <path d="M30 4c-2 0-4 2-6 6-2 4-2 8 0 10 1 1 2 2 4 2h4c2 0 3-1 4-2 2-2 2-6 0-10-2-4-4-6-6-6z" fill="none" stroke="#C9A96E" stroke-width="1.2"/>
-                <path d="M24 20c-4 2-8 6-8 12 0 4 2 8 6 10" fill="none" stroke="#C9A96E" stroke-width="1.2"/>
-                <path d="M36 20c4 2 8 6 8 12 0 4-2 8-6 10" fill="none" stroke="#C9A96E" stroke-width="1.2"/>
-                <path d="M22 42c2 4 4 8 8 10 4-2 6-6 8-10" fill="none" stroke="#C9A96E" stroke-width="1.2"/>
-                <path d="M26 52l-2 8M34 52l2 8" stroke="#C9A96E" stroke-width="1.2"/>
-                <circle cx="27" cy="16" r="1.5" fill="#C9A96E"/>
-                <circle cx="33" cy="16" r="1.5" fill="#C9A96E"/>
-                <path d="M14 28c-4-2-6 0-6 4s4 6 6 4" fill="none" stroke="#C9A96E" stroke-width="1"/>
-                <path d="M46 28c4-2 6 0 6 4s-4 6-6 4" fill="none" stroke="#C9A96E" stroke-width="1"/>
-                <path d="M28 22c0 2 1 4 2 6 1-2 2-4 2-6" fill="none" stroke="#C9A96E" stroke-width="0.8"/>
-                <circle cx="30" cy="2" r="2" fill="#C9A96E" opacity="0.6"/>
-            </svg>
-        </div>
-
-        <div class="parent-names">Mr. Hari V.P. &amp; Mrs. Poncy</div>
-        <div class="parent-address">
-            Vettupadath House, Kalappura Ward, Alappuzha
-        </div>
-        <div class="parent-phone">Ph: 9349976669, 9995481696</div>
+        <div class="inner-heading">We're Getting Engaged</div>
 
         <div class="invite-text">
-            Solicit your blessings and request the<br>
-            pleasure of your presence with family<br>
-            to celebrate the Engagement of our Daughter
+            We'd love for you to be a part of our special day.<br>
+            You're warmly invited to our engagement ceremony.
         </div>
 
-        <div class="bride-name">Anaswara</div>
-        <div class="with-text">with</div>
-        <div class="groom-name">Shyamjith</div>
-
-        <div class="groom-parents">
-            S/o. Mr. Saseendran P &amp; Mrs. Sheeja E<br>
-            Palakkandy, Vilamana, Iritty, Kannur
-        </div>
-
-        <div class="join-text">Join us to celebrate</div>
+        <div class="bride-name">Shyamjith</div>
+        <div class="with-text">&</div>
+        <div class="groom-name">Anaswara</div>
 
         <!-- Filigree Divider -->
         <div class="divider-filigree">
@@ -642,65 +566,42 @@
         <div class="event-details">
             <div class="detail-block">
                 <div class="day">SUNDAY</div>
-                <div class="date-big">10<sup style="font-size:14px">th</sup></div>
+                <div class="date-big">10</div>
                 <div class="date-sub">May 2026</div>
-                <div class="date-mal">27th Medam 1201</div>
             </div>
             <div class="detail-separator"></div>
             <div class="detail-block">
                 <div class="venue-name">
-                    Kerala State Coir Corporation<br>
-                    Convention Centre,<br>
-                    Alappuzha
+                    Kerala Coir Federation<br>
+                    Convention Center,<br>
+                    Alappuzha, Kerala
                 </div>
             </div>
             <div class="detail-separator"></div>
             <div class="detail-block">
-                <div class="time-icon">⏰</div>
                 <div class="time-text">11:00 AM</div>
                 <div class="date-sub">to</div>
-                <div class="time-text">11:30 PM</div>
+                <div class="time-text">11:30 AM</div>
             </div>
         </div>
 
-        <div class="sharing">Sharing the happiness: <span>Arjun</span></div>
+        <div class="join-text">Save the date — see you there!</div>
+
+        <a href="https://share.google/arcXqIbXld9Ns3xlr" target="_blank" class="venue-cta">
+            View Venue Location
+        </a>
     </div>
 
     <!-- Outer Cream Card (on top, slides away) -->
     <div class="outer-card" id="outerCard">
-        <div class="outer-top-text">Please join us to</div>
+        <div class="outer-top-text">We're Getting Engaged</div>
         <div class="outer-celebrate">Celebrate</div>
-        <div class="outer-sub-text">the engagement of</div>
+        <div class="outer-sub-text">We'd love for you to be a part of our special day</div>
 
         <div class="cutout-circle">
-            <div class="cutout-name1">Anaswara</div>
-            <div class="cutout-with">with</div>
-            <div class="cutout-name2">Shyamjith</div>
-        </div>
-
-        <!-- Love Birds -->
-        <div class="love-birds">
-            <svg viewBox="0 0 100 55" fill="none">
-                <!-- Left bird -->
-                <ellipse cx="35" cy="32" rx="12" ry="10" fill="none" stroke="#C9A96E" stroke-width="1.2"/>
-                <circle cx="31" cy="28" r="5" fill="none" stroke="#C9A96E" stroke-width="1"/>
-                <circle cx="30" cy="27" r="1" fill="#C9A96E"/>
-                <path d="M26 28l-4-1" stroke="#C9A96E" stroke-width="1"/>
-                <path d="M24 38l-2 6M28 40l0 5M32 40l2 5" stroke="#C9A96E" stroke-width="0.8"/>
-                <path d="M46 34q4 4 8 2" stroke="#C9A96E" stroke-width="1"/>
-                <!-- Right bird -->
-                <ellipse cx="65" cy="32" rx="12" ry="10" fill="none" stroke="#C9A96E" stroke-width="1.2"/>
-                <circle cx="69" cy="28" r="5" fill="none" stroke="#C9A96E" stroke-width="1"/>
-                <circle cx="70" cy="27" r="1" fill="#C9A96E"/>
-                <path d="M74 28l4-1" stroke="#C9A96E" stroke-width="1"/>
-                <path d="M76 38l2 6M72 40l0 5M68 40l-2 5" stroke="#C9A96E" stroke-width="0.8"/>
-                <path d="M54 34q-4 4-8 2" stroke="#C9A96E" stroke-width="1"/>
-                <!-- Heart between them -->
-                <path d="M48 22c0-3 2-5 4-5s4 2 4 5c0 4-4 7-4 7s-4-3-4-7z" fill="#C9A96E" opacity="0.5"/>
-                <!-- Branch -->
-                <path d="M18 45q16 4 32 0q16-4 32 0" stroke="#C9A96E" stroke-width="1" opacity="0.6"/>
-                <path d="M30 44q2-4 6-3M42 43q0-4 4-4M55 43q2-3 5-1M65 44q2-4 5-2" stroke="#C9A96E" stroke-width="0.6" opacity="0.4"/>
-            </svg>
+            <div class="cutout-name1">Shyamjith</div>
+            <div class="cutout-with">&</div>
+            <div class="cutout-name2">ANASWARA</div>
         </div>
 
         <div class="outer-date">10 MAY 2026</div>
@@ -742,10 +643,10 @@
         particlesEl.appendChild(p);
     }
 
-    // Slide outer card up after the initial animation plays
+    // Slide outer card up after staying visible for a while
     setTimeout(() => {
         document.getElementById('outerCard').classList.add('slide-up');
-    }, 5500);
+    }, 8000);
 
     function replay() {
         location.reload();
