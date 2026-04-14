@@ -128,7 +128,7 @@
             letter-spacing: 1.5px;
             opacity: 0;
             animation: fadeUp 1.2s ease-out 2s forwards;
-            margin-bottom: 6px;
+            margin-bottom: 30px;
             z-index: 2;
         }
 
@@ -207,14 +207,6 @@
             text-transform: lowercase;
         }
 
-        .cutout-name2 {
-            font-family: 'Cinzel', serif;
-            font-size: 17px;
-            color: var(--gold-light);
-            letter-spacing: 2px;
-            font-weight: 600;
-        }
-
         .outer-date {
             font-family: 'Cinzel', serif;
             font-size: 14px;
@@ -287,6 +279,17 @@
             pointer-events: none;
         }
 
+        .rings-icon {
+            opacity: 0;
+            animation: fadeDown 1s ease-out 8s forwards;
+            margin-bottom: 12px;
+        }
+
+        .rings-icon svg {
+            width: 100px;
+            height: 56px;
+        }
+
         .inner-heading {
             font-family: 'Cinzel', serif;
             font-size: 14px;
@@ -294,7 +297,7 @@
             letter-spacing: 4px;
             text-transform: uppercase;
             opacity: 0;
-            animation: fadeDown 1s ease-out 9s forwards;
+            animation: fadeDown 1s ease-out 8s forwards;
             margin-bottom: 8px;
         }
 
@@ -306,17 +309,18 @@
             line-height: 1.7;
             margin-top: 18px;
             opacity: 0;
-            animation: fadeUp 1s ease-out 9.5s forwards;
+            animation: fadeUp 1s ease-out 8.3s forwards;
             font-style: italic;
         }
 
         .bride-name {
-            font-family: 'Great Vibes', cursive;
-            font-size: 46px;
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 30px;
             color: var(--gold-bright);
             margin-top: 16px;
             opacity: 0;
-            animation: nameReveal 1.5s ease-out 10s forwards;
+            animation: nameReveal 1.5s ease-out 8.8s forwards;
             text-shadow: 0 2px 10px rgba(201,169,110,0.3);
             line-height: 1;
         }
@@ -328,29 +332,18 @@
             letter-spacing: 5px;
             text-transform: lowercase;
             opacity: 0;
-            animation: fadeUp 1s ease-out 10.5s forwards;
+            animation: fadeUp 1s ease-out 9.2s forwards;
             margin: 4px 0;
-        }
-
-        .groom-name {
-            font-family: 'Cinzel', serif;
-            font-size: 26px;
-            color: var(--gold-bright);
-            letter-spacing: 3px;
-            font-weight: 600;
-            opacity: 0;
-            animation: nameReveal 1.5s ease-out 11s forwards;
-            text-shadow: 0 2px 10px rgba(201,169,110,0.3);
         }
 
         .join-text {
             font-family: 'Libre Baskerville', serif;
-            font-size: 13px;
+            font-size: 18px;
             color: var(--gold-light);
             font-style: italic;
-            margin-top: 14px;
+            margin-top: 28px;
             opacity: 0;
-            animation: fadeUp 1s ease-out 13s forwards;
+            animation: fadeUp 1s ease-out 11s forwards;
         }
 
         /* Filigree divider */
@@ -359,7 +352,7 @@
             height: 28px;
             margin-top: 10px;
             opacity: 0;
-            animation: fadeIn 1.2s ease-out 11.5s forwards;
+            animation: fadeIn 1.2s ease-out 10s forwards;
         }
 
         /* Event details row */
@@ -371,7 +364,7 @@
             margin-top: 10px;
             width: 100%;
             opacity: 0;
-            animation: fadeUp 1.2s ease-out 12s forwards;
+            animation: fadeUp 1.2s ease-out 10.5s forwards;
         }
 
         .detail-block {
@@ -436,16 +429,16 @@
         .venue-cta {
             display: inline-block;
             font-family: 'Cinzel', serif;
-            font-size: 13px;
+            font-size: 8px;
             color: var(--gold-bright);
-            letter-spacing: 2px;
+            letter-spacing: 0.5px;
             text-decoration: none;
-            border: 1px solid rgba(201,169,110,0.4);
-            padding: 12px 28px;
-            border-radius: 30px;
-            margin-top: 18px;
+            border: 1px solid rgba(201,169,110,0.25);
+            padding: 4px 10px;
+            border-radius: 12px;
+            margin-top: 12px;
             opacity: 0;
-            animation: fadeUp 1s ease-out 13.5s forwards;
+            animation: fadeUp 1s ease-out 11.3s forwards;
             transition: all 0.3s;
             z-index: 2;
         }
@@ -493,7 +486,7 @@
             z-index: 50;
             pointer-events: none;
             opacity: 0;
-            animation: shimmerSweep 4s ease-in-out 14s forwards;
+            animation: shimmerSweep 4s ease-in-out 12s forwards;
         }
 
         @keyframes shimmerSweep {
@@ -517,7 +510,7 @@
             cursor: pointer;
             z-index: 200;
             opacity: 0;
-            animation: fadeIn 1s ease-out 15s forwards;
+            animation: fadeIn 1s ease-out 13s forwards;
             transition: all 0.3s;
             letter-spacing: 2px;
         }
@@ -540,7 +533,26 @@
     <div class="inner-card" id="innerCard">
         <div class="shimmer-overlay"></div>
 
-        <div class="inner-heading">We're Getting Engaged</div>
+        <!-- Stacked Rings -->
+        <div class="rings-icon">
+            <svg viewBox="0 0 100 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Bottom ring - tilted, seen from slight angle -->
+                <ellipse cx="50" cy="58" rx="28" ry="10" stroke="#C9A96E" stroke-width="2.5" opacity="0.7"/>
+                <ellipse cx="50" cy="58" rx="25" ry="8" stroke="#E8D5A8" stroke-width="0.5" opacity="0.3"/>
+                <!-- Top ring - tilted differently, resting on bottom ring -->
+                <ellipse cx="50" cy="48" rx="26" ry="12" stroke="#C9A96E" stroke-width="2.5" opacity="0.9" transform="rotate(-15 50 48)"/>
+                <ellipse cx="50" cy="48" rx="23" ry="10" stroke="#E8D5A8" stroke-width="0.5" opacity="0.3" transform="rotate(-15 50 48)"/>
+                <!-- Diamond on top ring -->
+                <path d="M42 34 L46 38 L42 42 L38 38 Z" fill="#C9A96E" opacity="0.8"/>
+                <path d="M42 34 L46 38 L42 42 L38 38 Z" stroke="#E8D5A8" stroke-width="0.6"/>
+                <!-- Sparkles -->
+                <line x1="42" y1="30" x2="42" y2="33" stroke="#C9A96E" stroke-width="0.8" opacity="0.5"/>
+                <line x1="36" y1="34" x2="38" y2="36" stroke="#C9A96E" stroke-width="0.6" opacity="0.4"/>
+                <line x1="48" y1="34" x2="46" y2="36" stroke="#C9A96E" stroke-width="0.6" opacity="0.4"/>
+            </svg>
+        </div>
+
+        <div class="inner-heading">Together With Our Families</div>
 
         <div class="invite-text">
             We'd love for you to be a part of our special day.<br>
@@ -549,7 +561,7 @@
 
         <div class="bride-name">Shyamjith</div>
         <div class="with-text">&</div>
-        <div class="groom-name">Anaswara</div>
+        <div class="bride-name">Anaswara</div>
 
         <!-- Filigree Divider -->
         <div class="divider-filigree">
@@ -585,23 +597,22 @@
             </div>
         </div>
 
-        <div class="join-text">Save the date — see you there!</div>
-
         <a href="https://share.google/arcXqIbXld9Ns3xlr" target="_blank" class="venue-cta">
             View Venue Location
         </a>
+
+        <div class="join-text">Save the date — see you there!</div>
+
     </div>
 
     <!-- Outer Cream Card (on top, slides away) -->
     <div class="outer-card" id="outerCard">
         <div class="outer-top-text">We're Getting Engaged</div>
-        <div class="outer-celebrate">Celebrate</div>
-        <div class="outer-sub-text">We'd love for you to be a part of our special day</div>
 
         <div class="cutout-circle">
             <div class="cutout-name1">Shyamjith</div>
             <div class="cutout-with">&</div>
-            <div class="cutout-name2">ANASWARA</div>
+            <div class="cutout-name1">Anaswara</div>
         </div>
 
         <div class="outer-date">10 MAY 2026</div>
